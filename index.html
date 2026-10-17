@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main id="container">
+        <header id="heading">
+            <div class="palette-icon">◉</div>
+            <h1>Background <span>Color Changer</span></h1>
+            <p>Click a color to change the background or add your own custom color</p>
+        </header>
+
+        <section id="acolors">
+            <button class="color-circle active" style="--color: #ff414b" aria-label="Red"></button>
+            <button class="color-circle" style="--color: #ff8739" aria-label="Orange"></button>
+            <button class="color-circle" style="--color: #ffd329" aria-label="Yellow"></button>
+            <button class="color-circle" style="--color: #22ce82" aria-label="Green"></button>
+            <button class="color-circle" style="--color: #3985ff" aria-label="Blue"></button>
+            <button class="color-circle" style="--color: #913cff" aria-label="Purple"></button>
+            <button class="color-circle" style="--color: #f04bb6" aria-label="Pink"></button>
+        </section>
+
+        <hr>
+
+        <section id="custom">
+            <h2>Add Custom Color</h2>
+
+            <div class="custom-controls">
+                <label class="color-input">
+                    <input type="color" id="color-picker" value="#8b5cf6">
+                    <span id="color-code">#8B5CF6</span>
+                    <button type="button" class="copy-btn" aria-label="Copy color code">▢</button>
+                </label>
+
+                <button type="button" id="add-color">＋ Add Color</button>
+                <button type="button" id="random-color">⤨ Random</button>
+            </div>
+        </section>
+
+        <section id="saved">
+            <h2>Your Colors</h2>
+            <div id="ccolors">
+                <button class="color-square" style="--color: #2dd4bf" aria-label="Teal"></button>
+                <button class="color-square" style="--color: #8061b5" aria-label="Lavender"></button>
+                <button class="color-square" style="--color: #ff7775" aria-label="Coral"></button>
+                <button class="color-square" style="--color: #35a9f4" aria-label="Sky blue"></button>
+                <button class="color-square" style="--color: #6bd581" aria-label="Light green"></button>
+                <button class="add-square" aria-label="Add another color">＋</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
